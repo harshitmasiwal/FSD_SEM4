@@ -44,7 +44,7 @@
 // let doingstuff = x => console.log(x)
 // doingstuff(10)
 
-const arr = ["aa","bb","cc"]
+// const arr = ["aa","bb","cc"]
 // arr.forEach(e => console.log(e))
 
 //spread oprator
@@ -90,7 +90,7 @@ const arr = ["aa","bb","cc"]
 
 //global variable
 
-let z = " anywhere "
+// let z = " anywhere "
 // function hello(x){
 //     console.log("outside",z)
 // }
@@ -100,11 +100,89 @@ let z = " anywhere "
 //     console.log("inside", z); // This will log the local variable
 // }
 // hello();
-console.log("outside", z); // This will log the global variable
+// console.log("outside", z); // This will log the global variable
 
-x = "kkkk"
-function hello(x) {
-    let z = "local variable";
-    console.log("inside", x); // This will log the local variable
-}
-hello("jjj");
+// x = "kkkk"
+// function hello(x) {
+//     let z = "local variable";
+//     console.log("inside", x); // This will log the local variable
+// }
+// hello("jjj");
+
+// (function() {
+//     console.log("This is an IIFE function!");
+// })();
+
+
+//recursion 
+
+// function gett(nr){
+    
+//     if(nr > 0)
+//     gett(--nr);
+//     console.log(nr);
+// }
+
+// gett(3);
+
+// function logRecursive(n) {
+//     if (n > 0) {
+//         console.log("Started function with n =", n);
+//         logRecursive(n - 1);}
+//         else{
+//         console.log("Done with recursion for n =", n);}
+    
+//         console.log("Ended function as n =", n);
+    
+// }
+
+// logRecursive(3);
+
+
+// function outerFunction(outerVariable) {
+//     console.log("Outer function variable:", outerVariable);
+
+//     function innerFunction(innerVariable) {
+//         console.log("Inner function variable:", innerVariable);
+//         console.log("Accessing outer variable from inner function:", outerVariable);
+//     }
+
+//     return innerFunction;
+// }
+
+// const innerFunc = outerFunction("Outer Value");
+// innerFunc("Inner Value");
+
+
+// Anonymous function assigned to a variable
+// let anonymousFunction = function() {
+//     console.log("This is an anonymous function!");
+// };
+// anonymousFunction();
+
+// Anonymous function used as an argument
+
+// function doFlexibleStuff(executeStuff) {
+//     executeStuff();
+
+//     console.log("Executing stuff...");
+    
+// }
+// functionVariable = 10;
+// doFlexibleStuff(functionVariable);
+
+// function displayMessageAfterDelay() {
+//     setTimeout(() => {
+//         console.log("This message is displayed after 2 seconds");
+//     }, 2000);
+// }
+
+// displayMessageAfterDelay();
+
+// function displayMessageAfterDelay() {
+//     setInterval(() => {
+//         console.log("This message is displayed after 2 seconds");
+//     }, 2000);
+// }
+
+// displayMessageAfterDelay();
